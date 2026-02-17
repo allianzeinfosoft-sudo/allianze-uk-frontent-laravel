@@ -2,33 +2,48 @@
 namespace App\Helpers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Cache;
 
 class GeneralHelper
 {
-    
- public function fetchImageUrl($imageId)
+    protected static $runtimeCache = [];
+
+    public function fetchImageUrl($imageId, $cacheMinutes = 60)
     {
-        $response = Http::get(env('WORDPRESS_API_URL') . '/media/' . $imageId);
-        $data = $response->json();
-        return $data['guid']['rendered'] ?? null;
+        $cacheKey = "wp_media_{$imageId}";
+
+        if (isset(self::$runtimeCache[$cacheKey])) {
+            return self::$runtimeCache[$cacheKey];
+        }
+
+        return self::$runtimeCache[$cacheKey] = Cache::remember($cacheKey, now()->addMinutes($cacheMinutes), function () use ($imageId) {
+            $response = Http::timeout(10)->get(config('services.wordpress.url') . '/media/' . $imageId);
+            $data = $response->json();
+            return $data['guid']['rendered'] ?? null;
+        });
     }
 
-public function fetchPageData($slug)
+    public function fetchPageData($slug, $cacheMinutes = 60)
     {
-        $response = Http::get(env('WORDPRESS_API_URL') . '/pages/?slug=' . $slug);
-        return $response->json();
+        $cacheKey = "wp_page_{$slug}";
+
+        if (isset(self::$runtimeCache[$cacheKey])) {
+            return self::$runtimeCache[$cacheKey];
+        }
+
+        return self::$runtimeCache[$cacheKey] = Cache::remember($cacheKey, now()->addMinutes($cacheMinutes), function () use ($slug) {
+            $response = Http::timeout(15)->get(config('services.wordpress.url') . '/pages/?slug=' . $slug);
+            return $response->json();
+        });
     }
 
-public function getCompanyData($slug)
+    public function getCompanyData($slug)
     {
-        $response = $this->fetchPageData($slug);
-        return $response;
+        return $this->fetchPageData($slug);
     }
 
-public function getFooterData($slug)
+    public function getFooterData($slug)
     {
-        $response = $this->fetchPageData($slug);
-        return $response;
-    }   
-
+        return $this->fetchPageData($slug);
+    }
 }

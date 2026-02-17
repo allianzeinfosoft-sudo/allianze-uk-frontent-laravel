@@ -34,7 +34,7 @@
                             <div>
                                 @if($data['healthcare']['icon'])
                                 <div class="service-card_icon">
-                                    <img src="{{ $data['healthcare']['icon'] }}" alt="">
+                                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['healthcare']['icon']) ?? '' }}" alt="">
                                 </div>
                                 @endif
 
@@ -61,7 +61,7 @@
                             <div>
                                 @if($data['education']['icon'])
                                 <div class="service-card_icon">
-                                    <img src="{{ $data['education']['icon'] }}" alt="">
+                                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['education']['icon']) ?? '' }}" alt="">
                                 </div>
                                 @endif
                                 <h4 class="service-card_title h5">
@@ -87,7 +87,7 @@
                             <div>
                                 @if($data['marketing']['icon'])
                                 <div class="service-card_icon">
-                                    <img src="{{ $data['marketing']['icon'] }}" alt="">
+                                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['marketing']['icon']) ?? '' }}" alt="">
                                 </div>
                                 @endif
                                 <h4 class="service-card_title h5">
@@ -113,7 +113,7 @@
                             <div>
                                 @if($data['banking_and_finance']['icon'])
                                 <div class="service-card_icon">
-                                    <img src="{{ $data['banking_and_finance']['icon'] }}" alt="">
+                                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['banking_and_finance']['icon']) ?? '' }}" alt="">
                                 </div>
                                 @endif
                                 <h4 class="service-card_title h5">
@@ -139,7 +139,7 @@
                             <div>
                                 @if($data['agriculture']['icon'])
                                 <div class="service-card_icon">
-                                    <img src="{{ $data['agriculture']['icon'] }}" alt="">
+                                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['agriculture']['icon']) ?? '' }}" alt="">
                                 </div>
                                 @endif
                                 <h4 class="service-card_title h5">
@@ -165,7 +165,7 @@
                             <div>
                                 @if($data['manufacturing']['icon'])
                                 <div class="service-card_icon">
-                                    <img src="{{ $data['manufacturing']['icon'] }}" alt="">
+                                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['manufacturing']['icon']) ?? '' }}" alt="">
                                 </div>
                                 @endif
                                 <h4 class="service-card_title h5">
@@ -191,7 +191,7 @@
                             <div>
                                 @if($data['retail']['icon'])
                                 <div class="service-card_icon">
-                                    <img src="{{ $data['retail']['icon'] }}" alt="">
+                                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['retail']['icon']) ?? '' }}" alt="">
                                 </div>
                                 @endif
                                 <h4 class="service-card_title h5">
@@ -217,7 +217,7 @@
                             <div>
                                 @if($data['transportation']['icon'])
                                 <div class="service-card_icon">
-                                    <img src="{{ $data['transportation']['icon'] }}" alt="">
+                                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['transportation']['icon']) ?? '' }}" alt="">
                                 </div>
                                 @endif
                                 <h4 class="service-card_title h5">
@@ -243,7 +243,7 @@
                             <div>
                                 @if($data['cybersecurity']['icon'])
                                 <div class="service-card_icon">
-                                    <img src="{{ $data['cybersecurity']['icon'] }}" alt="">
+                                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['cybersecurity']['icon']) ?? '' }}" alt="">
                                 </div>
                                 @endif
                                 <h4 class="service-card_title h5">
@@ -269,7 +269,7 @@
                             <div>
                                 @if($data['food_and_beverage']['icon'])
                                 <div class="service-card_icon">
-                                    <img src="{{ $data['food_and_beverage']['icon'] }}" alt="">
+                                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['food_and_beverage']['icon']) ?? '' }}" alt="">
                                 </div>
                                 @endif
                                 <h4 class="service-card_title h5">
@@ -295,7 +295,7 @@
                             <div>
                                 @if($data['automobile']['icon'])
                                 <div class="service-card_icon">
-                                    <img src="{{ $data['automobile']['icon'] }}" alt="">
+                                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['automobile']['icon']) ?? '' }}" alt="">
                                 </div>
                                 @endif
                                 <h4 class="service-card_title h5">
@@ -321,7 +321,7 @@
                             <div>
                                 @if($data['real_estate_and_property']['icon'])
                                 <div class="service-card_icon">
-                                    <img src="{{ $data['real_estate_and_property']['icon'] }}" alt="">
+                                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['real_estate_and_property']['icon']) ?? '' }}" alt="">
                                 </div>
                                 @endif
                                 <h4 class="service-card_title h5">

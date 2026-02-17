@@ -1,8 +1,12 @@
 @php
     $data = app('App\Helpers\GeneralHelper')->getFooterData('footer');
-    $footerData = $data[0]['acf']['footer_data'] ?? [];    
-    
+    $footerData = $data[0]['acf']['footer_data'] ?? [];
+
+    $companyData = new App\Helpers\GeneralHelper()->fetchPageData('company-info');
+    $company = $companyData[0]['acf']['general_settings'] ?? [];
 @endphp
+
+    
 
 <footer class="footer-wrapper footer-layout1" style="background-image: url({{ new app\Helpers\GeneralHelper()->fetchImageUrl($footerData['background_image'] ?? null) }});">    
         <div class="container">
@@ -62,9 +66,9 @@
                         <div class="widget footer-widget">
                             <h3 class="widget_title">Contact</h3>
                             <div class="widget-contact">
-                                <p><a href="tel:888123456765">(+888) 123 456 765</a></p>
-                                <p><a href="mailto:infoname@mail.com">infoname@mail.com</a></p>
-                                <p>Old city Street,USA <br> 1212 New york-3500</p>
+                                <p><a href="tel:{{ $company['phone'] }}">{{ $company['phone'] }}</a></p>
+                                <p><a href="mailto:{{ $company['e-mail'] }}">{{ $company['e-mail'] }}</a></p>
+                                <p>{{ $company['address'] }}</p>
                             </div>
                         </div>
                     </div>                    
@@ -77,9 +81,9 @@
                     <div class="col-auto align-self-center"><p class="copyright-text text-center">© <a href="#">Allianze Infosoft</a> {{ date('Y') }} | All Rights Reserved</p></div>
                     <div class="col-auto">
                         <div class="footer-links">
-                            <a href="contact.html">Tarms & Condition</a>
+                            {{-- <a href="contact.html">Tarms & Condition</a>
                             <a href="contact.html">Privacy Policy</a>
-                            <a href="contact.html">Contact Us</a>
+                            <a href="contact.html">Contact Us</a> --}}
                         </div>
                     </div>
                 </div>                

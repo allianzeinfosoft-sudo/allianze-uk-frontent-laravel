@@ -3,7 +3,7 @@
 @endphp
 
 <div class="client-bg-area-2"
-     style="background-image: url({{ asset('assets/img/bg/client-bg2-1.png') }});">
+     style="background-image: url({{ new App\Helpers\GeneralHelper()->fetchImageUrl($data['bg_image']) ?? asset('assets/img/bg/testimonial-bg1-1') }});">
 
     <div class="testimonial-area-2 overflow-hidden">
         <div class="container">
@@ -38,7 +38,7 @@
 
                                             <div class="testi-card-profile">
                                                 <div class="testi-profile_thumb">
-                                                    <img src="{{ new App\Helpers\GeneralHelper()->fetchImageUrl($data['testimonial_1']['image']) ?? asset('assets/img/testimonial/testimonial-2-1.png') }}">
+                                                    <img src="{{ new App\Helpers\GeneralHelper()->fetchImageUrl($data['testimonial_1']['image']) ?? asset('assets/img/testimonial/testimonial-2-1.png') }}" width="74px" height="74px" />
                                                 </div>
 
                                                 <div class="testi-card-profile-details">
@@ -68,7 +68,7 @@
                                         <div class="testi-card_content">
                                             <div class="testi-card-profile">
                                                 <div class="testi-profile_thumb">
-                                                    <img src="{{ new App\Helpers\GeneralHelper()->fetchImageUrl($data['testimonial_2']['image']) ?? asset('assets/img/testimonial/testimonial-2-2.png') }}">
+                                                    <img src="{{ new App\Helpers\GeneralHelper()->fetchImageUrl($data['testimonial_2']['image']) ?? asset('assets/img/testimonial/testimonial-2-1.png') }}" width="74px" height="74px" >
                                                 </div>
                                                 <div class="testi-card-profile-details">
                                                     <h4 class="testi-profile-title">
@@ -93,7 +93,7 @@
                                         <div class="testi-card_content">
                                             <div class="testi-card-profile">
                                                 <div class="testi-profile_thumb">
-                                                    <img src="{{ new App\Helpers\GeneralHelper()->fetchImageUrl($data['testimonial_3']['image']) ?? asset('assets/img/testimonial/testimonial-2-2.png') }}">
+                                                    <img src="{{ new App\Helpers\GeneralHelper()->fetchImageUrl($data['testimonial_3']['image']) ?? asset('assets/img/testimonial/testimonial-2-1.png') }}" width="74px" height="74px" >
                                                 </div>
                                                 <div class="testi-card-profile-details">
                                                     <h4 class="testi-profile-title">

@@ -108,8 +108,9 @@
     <script src="{{asset('assets/js/jquery.marquee.min.js')}}"></script>
     <!-- Isotope Filter -->
     <script src="{{asset('assets/js/imagesloaded.pkgd.min.js')}}"></script>
-    <script src="{{asset('assets/js/isotope.pkgd.min.js')}}"></script>
     
+    <script src="{{asset('assets/js/isotope.pkgd.min.js')}}"></script>
+    <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
     <!-- Main Js File -->
     <script src="{{asset('assets/js/main.js')}}"></script>
     @yield('scripts')

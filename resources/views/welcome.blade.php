@@ -8,7 +8,7 @@
     <!--==============================
     Hero Area
     ==============================-->
-    <div class="hero-wrapper hero-4" id="hero" style="background-image: url({{asset('assets/img/hero/banner1.png')}});">
+    <div class="hero-wrapper hero-4" id="hero" style="background-image: url({{  (new App\Helpers\GeneralHelper())->fetchImageUrl($hero_data['background_image']) ?? asset('assets/img/hero/banner1.png') }});">
         <div class="hero-shape4-1">
             <img class="shape-position shape1" src="{{asset('assets/img/hero/shape1.png')}}" alt="img">
             <img class="shape-position shape2" src="{{asset('assets/img/hero/shape2.png')}}" alt="img">
@@ -18,13 +18,9 @@
             <div class="row">                
                 <div class="col-xxl-6 col-xl-5 col-lg-8">
                     <div class="hero-style4">
-                        <span class="sub-title text-white">Growth Accelerator</span>
-                        <h1 class="hero-title text-white">Explore The Latest Collection</h1>
-                        <p class="hero-text text-white">Vestibulum rhoncus nisl ac gravida porta. Mauris eu sapien lacus. Etiam molestie justo neque, in convallis massa tempus in.</p>
-                        <div class="btn-group">
-                            <a href="about.html" class="btn">Learn More</a>
-                            <a href="service.html" class="btn style-border">Our Service</a>
-                        </div>
+                        <span class="sub-title text-white">{{ $hero_data['subtitle'] ?? '' }}</span>
+                        <h1 class="hero-title text-white">{{ $hero_data['hero_title'] ?? '' }} </h1>
+                        <p class="hero-text text-white">{{ $hero_data['hero_text'] ?? '' }} </p>
                     </div>
                 </div>
             </div>                
