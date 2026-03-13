@@ -58,7 +58,7 @@
                             {{ $data['title'] ?? 'Default About Title' }}
                         </h2>
 
-                        <p class="sec-text">
+                        <p class="sec-text text-justify">
                             {{ $data['description'] ?? '' }}
                         </p>
                     </div>

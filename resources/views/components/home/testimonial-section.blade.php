@@ -3,7 +3,7 @@
 @endphp
 
 <div class="client-bg-area-2"
-     style="background-image: url({{ new App\Helpers\GeneralHelper()->fetchImageUrl($data['bg_image']) ?? asset('assets/img/bg/testimonial-bg1-1') }});">
+     style="background-image: url({{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['bg_image'] ?? null) ?? asset('assets/img/bg/testimonial-bg1-1.png') }});">
 
     <div class="testimonial-area-2 overflow-hidden">
         <div class="container">
@@ -24,7 +24,7 @@
                         </div>
 
                         <div class="quote-icon">
-                            <img src="{{ new App\Helpers\GeneralHelper()->fetchImageUrl($data['quote_icon']) ?? asset('assets/img/icon/quote2-1.svg') }}">
+                            <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($data['quote_icon'] ?? null) ?? asset('assets/img/icon/quote2-1.svg') }}">
                         </div>
 
                         <div class="row global-carousel {{ $data['slider_class'] ?? 'testi-slider-2' }}"
@@ -52,7 +52,7 @@
                                                 </div>
                                             </div>
 
-                                            <p class="testi-card_text">
+                                            <p class="testi-card_text text-justify">
                                                 {{ $data['testimonial_1']['text'] ?? '' }}
                                             </p>
 
@@ -79,7 +79,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <p class="testi-card_text">
+                                            <p class="testi-card_text text-justify">
                                                 {{ $data['testimonial_2']['text'] ?? '' }}
                                             </p>
                                         </div>
@@ -104,7 +104,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <p class="testi-card_text">
+                                            <p class="testi-card_text text-justify">
                                                 {{ $data['testimonial_3']['text'] ?? '' }}
                                             </p>
                                         </div>

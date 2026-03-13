@@ -14,7 +14,7 @@
                         {{ $data['title'] ?? 'Our Partner Management Solutions' }}
                     </h2>
 
-                    <p class="sec-text mx-auto" style="max-width: 750px;">
+                    <p class="sec-text mx-auto text-justify" style="max-width: 750px;">
                         {{ $data['description'] ?? '' }}
                     </p>
 
@@ -35,7 +35,7 @@
                         <h5 class="feature-title mb-15">
                             {{ $data['cost_savings']['title'] }}
                         </h5>
-                        <p class="feature-text mb-0">
+                        <p class="feature-text mb-0 text-justify">
                             {{ $data['cost_savings']['text'] }}
                         </p>
                     </div>
@@ -53,7 +53,7 @@
                             <h5 class="feature-title mb-15">
                                 {{ $data['transparent_engagement']['title'] }}
                             </h5>
-                            <p class="feature-text mb-0">
+                            <p class="feature-text mb-0 text-justify">
                                 {{ $data['transparent_engagement']['text'] }}
                             </p>
                         </div>
@@ -71,7 +71,7 @@
                             <h5 class="feature-title mb-15">
                                 {{ $data['centric_expertise']['title'] }}
                             </h5>
-                            <p class="feature-text mb-0">
+                            <p class="feature-text mb-0 text-justify">
                                 {{ $data['centric_expertise']['text'] }}
                             </p>
                         </div>
@@ -89,7 +89,7 @@
                             <h5 class="feature-title mb-15">
                                 {{ $data['scalable_solutions']['title'] }}
                             </h5>
-                            <p class="feature-text mb-0">
+                            <p class="feature-text mb-0 text-justify">
                                 {{ $data['scalable_solutions']['text'] }}
                             </p>
                         </div>

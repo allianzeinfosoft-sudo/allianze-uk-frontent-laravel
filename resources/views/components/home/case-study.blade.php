@@ -38,19 +38,19 @@
                         </h4>
                         <!-- Content -->
                         <div class="process-card-text text-muted text-start">
-                            <p class="mb-2">
+                            <p class="mb-2 text-justify">
                                 <strong class="text-dark">Client:</strong>
                                 {{ $data['case_1']['client'] ?? '' }}
                             </p>
-                            <p class="mb-2">
+                            <p class="mb-2 text-justify">
                                 <strong class="text-dark">Challenge:</strong>
                                 {{ $data['case_1']['challenge'] ?? '' }}
                             </p>
-                            <p class="mb-2">
+                            <p class="mb-2 text-justify">
                                 <strong class="text-dark">Solution:</strong>
                                 {{ $data['case_1']['solution'] ?? '' }}
                             </p>
-                            <p class="mb-0">
+                            <p class="mb-0 text-justify">
                                 <strong class="text-dark">Result:</strong>
                                 {{ $data['case_1']['result'] ?? '' }}
                             </p>
@@ -73,19 +73,19 @@
                         </h4>
                         <!-- Content -->
                         <div class="process-card-text text-muted text-start">
-                            <p class="mb-2">
+                            <p class="mb-2 text-justify">
                                 <strong class="text-dark">Client:</strong>
                                 {{ $data['case_2']['client'] ?? '' }}
                             </p>
-                            <p class="mb-2">
+                            <p class="mb-2 text-justify">
                                 <strong class="text-dark">Challenge:</strong>
                                 {{ $data['case_2']['challenge'] ?? '' }}
                             </p>
-                            <p class="mb-2">
+                            <p class="mb-2 text-justify">
                                 <strong class="text-dark">Solution:</strong>
                                 {{ $data['case_2']['solution'] ?? '' }}
                             </p>
-                            <p class="mb-0">
+                            <p class="mb-0 text-justify">
                                 <strong class="text-dark">Result:</strong>
                                 {{ $data['case_2']['result'] ?? '' }}
                             </p>

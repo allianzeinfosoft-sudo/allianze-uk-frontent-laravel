@@ -38,13 +38,17 @@
             <!-- Main Menu Area -->
             <div class="menu-area">
                 <div class="header-navbar-logo">
-                    <a href="{{ route('home') }}"><img src="{{(new App\Helpers\GeneralHelper())->fetchImageUrl($company_info['general_settings']['company_logo']) ?? asset('assets/img/logo-white.svg')}}" alt="logo"></a>
+                    <a href="{{ route('home') }}">
+                        <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl(data_get($company_info,'general_settings.company_logo')) ?? asset('assets/img/logo-white.svg') }}" alt="logo">
+                    </a>
                 </div>
                 <div class="container">
                     <div class="row align-items-center justify-content-lg-start justify-content-between">
                         <div class="col-auto d-xl-none d-block">
                             <div class="header-logo">
-                                <a href="{{ route('home') }}"><img src="{{(new App\Helpers\GeneralHelper())->fetchImageUrl($company_info['general_settings']['company_logo']) ?? asset('assets/img/logo-white.svg')}}" alt="logo"></a>
+                                <a href="{{ route('home') }}">
+                                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl(data_get($company_info,'general_settings.company_logo')) ?? asset('assets/img/logo-white.svg') }}" alt="logo">
+                                </a>
                             </div>
                         </div>
                         <div class="col-auto">

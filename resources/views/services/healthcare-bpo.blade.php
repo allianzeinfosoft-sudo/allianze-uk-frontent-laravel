@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="breadcumb-content">
-                        <h1 class="breadcumb-title">{{ $seo_data['title'] ?? 'Default Title' }}</h1>
+                        <h1 class="breadcumb-title">{{ $meta_title ?? 'Default Title' }}</h1>
                         <ul class="breadcumb-menu">
                             <li><a href="{{ route('home') }}">Home</a></li>
                             <li class="active">Service</li>
@@ -41,7 +41,7 @@
                         </div>
                         <div class="page-content">
                             <h2 class="page-title">{{ $data_service['title'] ?? 'Default Title' }}</h2>
-                            <p class="mb-25">{!! $data_service['service_description'] ?? 'Default Description' !!}</p>
+                            <p class="mb-25 text-justify">{!! $data_service['service_description'] ?? 'Default Description' !!}</p>
                             <h3 class="page-subtitle mb-15">{{ $data_service['subtitle_1'] ?? 'Default Subtitle' }}</h3>
                             <h4 class="mb-25">{{ $data_service['sub_services']['title'] ?? 'Default Description 2' }}</h4>
                          
@@ -53,7 +53,7 @@
                                              <img src="{{ (new app\Helpers\GeneralHelper())->fetchImageUrl($data_service['sub_services']['service_1']['service_1_image']) ?? asset('assets/img/service/service-details1-2.png') }}" alt="img">
                                         </div>
                                         <h3 class="page-subtitle mb-15">{{ $data_service['sub_services']['service_1']['title'] ?? 'Default Subtitle' }}</h3>
-                                        <p class="mb-30">{{ $data_service['sub_services']['service_1']['descriptions'] ?? 'Default Description 3' }}</p>
+                                        <p class="mb-30 text-justify">{{ $data_service['sub_services']['service_1']['descriptions'] ?? 'Default Description 3' }}</p>
                                         </div>
                                    @endif
 
@@ -63,7 +63,7 @@
                                              <img src="{{ (new app\Helpers\GeneralHelper())->fetchImageUrl($data_service['sub_services']['service_2']['service_2_image']) ?? asset('assets/img/service/service-details1-2.png') }}" alt="img">
                                         </div>
                                         <h3 class="page-subtitle mb-15">{{ $data_service['sub_services']['service_2']['title'] ?? 'Default Subtitle' }}</h3>
-                                        <p class="mb-30">{{ $data_service['sub_services']['service_2']['descriptions'] ?? 'Default Description 3' }}</p>
+                                        <p class="mb-30 text-justify">{{ $data_service['sub_services']['service_2']['descriptions'] ?? 'Default Description 3' }}</p>
                                         </div>
                                    @endif
                               </div>
@@ -77,7 +77,7 @@
                                                   <img src="{{ (new app\Helpers\GeneralHelper())->fetchImageUrl($data_service['sub_services']['service_3']['service_3_image']) ?? asset('assets/img/service/service-details1-2.png') }}" alt="img">
                                              </div>
                                              <h3 class="page-subtitle mb-15">{{ $data_service['sub_services']['service_3']['title'] ?? 'Default Subtitle' }}</h3>
-                                             <p class="mb-30">{{ $data_service['sub_services']['service_3']['description'] ?? 'Default Description 3' }}</p>
+                                             <p class="mb-30 text-justify">{{ $data_service['sub_services']['service_3']['description'] ?? 'Default Description 3' }}</p>
                                         </div>
                                    @endif
 
@@ -87,7 +87,7 @@
                                                   <img src="{{ (new app\Helpers\GeneralHelper())->fetchImageUrl($data_service['sub_services']['service_4']['service_4_image']) ?? asset('assets/img/service/service-details1-2.png') }}" alt="img">
                                              </div>
                                              <h3 class="page-subtitle mb-15">{{ $data_service['sub_services']['service_4']['title'] ?? 'Default Subtitle' }}</h3>
-                                             <p class="mb-30">{{ $data_service['sub_services']['service_4']['description'] ?? 'Default Description 3' }}</p>
+                                             <p class="mb-30 text-justify">{{ $data_service['sub_services']['service_4']['description'] ?? 'Default Description 3' }}</p>
                                         </div>
                                    @endif
                               </div>
@@ -101,7 +101,7 @@
                                                   <img src="{{ (new app\Helpers\GeneralHelper())->fetchImageUrl($data_service['sub_services']['service_5']['service_5_image']) ?? asset('assets/img/service/service-details1-2.png') }}" alt="img">
                                              </div>
                                              <h3 class="page-subtitle mb-15">{{ $data_service['sub_services']['service_5']['title'] ?? 'Default Subtitle' }}</h3>
-                                             <p class="mb-30">{{ $data_service['sub_services']['service_5']['description'] ?? 'Default Description 3' }}</p>
+                                             <p class="mb-30 text-justify">{{ $data_service['sub_services']['service_5']['description'] ?? 'Default Description 3' }}</p>
                                         </div>
                                    @endif
 
@@ -111,7 +111,7 @@
                                              <img src="{{ (new app\Helpers\GeneralHelper())->fetchImageUrl($data_service['sub_services']['service_6']['service_6_image']) ?? asset('assets/img/service/service-details1-2.png') }}" alt="img">
                                         </div>
                                         <h3 class="page-subtitle mb-15">{{ $data_service['sub_services']['service_6']['title'] ?? 'Default Subtitle' }}</h3>
-                                        <p class="mb-30">{{ $data_service['sub_services']['service_6']['description'] ?? 'Default Description 3' }}</p>
+                                        <p class="mb-30 text-justify">{{ $data_service['sub_services']['service_6']['description'] ?? 'Default Description 3' }}</p>
                                    </div>
                                    @endif
                               </div>
@@ -125,7 +125,7 @@
                                                   <img src="{{ (new app\Helpers\GeneralHelper())->fetchImageUrl($data_service['sub_services']['service_7']['service_7_image']) ?? asset('assets/img/service/service-details1-2.png') }}" alt="img">
                                              </div>
                                              <h3 class="page-subtitle mb-15">{{ $data_service['sub_services']['service_7']['title'] ?? 'Default Subtitle' }}</h3>
-                                             <p class="mb-30">{{ $data_service['sub_services']['service_7']['description'] ?? 'Default Description 3' }}</p>
+                                             <p class="mb-30 text-justify">{{ $data_service['sub_services']['service_7']['description'] ?? 'Default Description 3' }}</p>
                                         </div>
                                    @endif
 
@@ -135,7 +135,7 @@
                                                   <img src="{{ (new app\Helpers\GeneralHelper())->fetchImageUrl($data_service['sub_services']['service_8']['service_8_image']) ?? asset('assets/img/service/service-details1-2.png') }}" alt="img">
                                              </div>
                                              <h3 class="page-subtitle mb-15">{{ $data_service['sub_services']['service_8']['title'] ?? 'Default Subtitle' }}</h3>
-                                             <p class="mb-30">{{ $data_service['sub_services']['service_8']['description'] ?? 'Default Description 3' }}</p>
+                                             <p class="mb-30 text-justify">{{ $data_service['sub_services']['service_8']['description'] ?? 'Default Description 3' }}</p>
                                         </div>
                                    @endif
                               </div>
@@ -148,7 +148,7 @@
                                              <img src="{{ (new app\Helpers\GeneralHelper())->fetchImageUrl($data_service['sub_services']['service_9']['service_9_image']) ?? asset('assets/img/service/service-details1-2.png') }}" alt="img">
                                         </div>
                                         <h3 class="page-subtitle mb-15">{{ $data_service['sub_services']['service_9']['title'] ?? 'Default Subtitle' }}</h3>
-                                        <p class="mb-30">{{ $data_service['sub_services']['service_9']['description'] ?? 'Default Description 3' }}</p>
+                                        <p class="mb-30 text-justify">{{ $data_service['sub_services']['service_9']['description'] ?? 'Default Description 3' }}</p>
                                    </div>
                                    </div>
                               @endif
@@ -160,14 +160,14 @@
                                 <div class="col-md-6">
                                     <div class="team-card style2">
                                         <h3 class="page-subtitle mb-15">{{ $data_service['sub_section']['section_1']['section_1_title'] ?? 'Default Subtitle' }}</h3>
-                                        <p class="mb-30">{{ $data_service['sub_section']['section_1']['section_1_description'] ?? 'Default Description 3' }}</p>
+                                        <p class="mb-30 text-justify">{{ $data_service['sub_section']['section_1']['section_1_description'] ?? 'Default Description 3' }}</p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <div class="team-card style2">
                                         <h3 class="page-subtitle mb-15">{{ $data_service['sub_section']['section_2']['section_2_title'] ?? 'Default Subtitle' }}</h3>
-                                        <p class="mb-30">{{ $data_service['sub_section']['section_2']['section_2_description'] ?? 'Default Description 3' }}</p>
+                                        <p class="mb-30 text-justify">{{ $data_service['sub_section']['section_2']['section_2_description'] ?? 'Default Description 3' }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -176,20 +176,20 @@
                                 <div class="col-md-6">
                                     <div class="team-card style2">
                                         <h3 class="page-subtitle mb-15">{{ $data_service['sub_section']['section_3']['section_3_title'] ?? 'Default Subtitle' }}</h3>
-                                        <p class="mb-30">{{ $data_service['sub_section']['section_3']['section_3_description'] ?? 'Default Description 3' }}</p>
+                                        <p class="mb-30 text-justify">{{ $data_service['sub_section']['section_3']['section_3_description'] ?? 'Default Description 3' }}</p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <div class="team-card style2">
                                         <h3 class="page-subtitle mb-15">{{ $data_service['sub_section']['section_4']['section_4_title'] ?? 'Default Subtitle' }}</h3>
-                                        <p class="mb-30">{{ $data_service['sub_section']['section_4']['section_4_description'] ?? 'Default Description 3' }}</p>
+                                        <p class="mb-30 text-justify">{{ $data_service['sub_section']['section_4']['section_4_description'] ?? 'Default Description 3' }}</p>
                                     </div>
                                 </div>
                             </div>
 
                             <h3 class="page-subtitle mb-15">{{ $data_service['subtitle_3'] ?? 'Default Subtitle' }}</h3>
-                            <p class="mb-30">{{ $data_service['description'] ?? 'Default Description 3' }}</p>
+                            <p class="mb-30 text-justify">{{ $data_service['description'] ?? 'Default Description 3' }}</p>
 
                         </div>
                     </div>
@@ -205,11 +205,11 @@
                         <div class="widget widget_contact">
                             <div class="widget-contact-wrap text-center">
                                 <h3 class="widget_title">Contact Us</h3>
-                                <p class="widget-contact-text">It is a long established fact that a reader will be distracted by the and readable content repair</p>
+                                <p class="widget-contact-text text-justify">It is a long established fact that a reader will be distracted by the and readable content repair</p>
                                 <div class="icon">
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
-                                <p class="widget-contact-text">Need help?</p>
+                                <p class="widget-contact-text text-justify">Need help?</p>
                                 <h5><a href="tel:80855510111">{{ $company_info['phone'] }}</a></h5>
                             </div>
                         </div> 

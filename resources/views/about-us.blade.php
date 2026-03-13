@@ -42,7 +42,7 @@ Breadcumb
                         <div class="title-area mb-30">
                             <span class="sub-title">{{ $data_about_us['subtitle'] ?? '' }}</span>
                             <h2 class="sec-title">{{ $data_about_us['title'] ?? '' }} <img class="title-bg-shape shape-center" src="assets/img/bg/title-bg-shape.png" alt="img"></h2>
-                            <div class="sec-text">{!! $data_about_us['description'] ?? '' !!}</div>
+                            <div class="sec-text text-justify">{!! $data_about_us['description'] ?? '' !!}</div>
                         </div>
                         <div class="about-feature-wrap style-shadow">
                             <div class="icon">
@@ -50,7 +50,7 @@ Breadcumb
                             </div>
                             <div class="about-feature-wrap-details">
                                 <h5 class="about-feature-title">Our Vision</h5>
-                                <p class="about-feature-text">{!! $data_about_us['our_vision'] ?? '' !!}</p>
+                                <p class="about-feature-text text-justify">{!! $data_about_us['our_vision'] ?? '' !!}</p>
                             </div>
                         </div>
                         <div class="about-feature-wrap style-shadow">
@@ -59,7 +59,7 @@ Breadcumb
                             </div>
                             <div class="about-feature-wrap-details">
                                 <h5 class="about-feature-title">Our Mission</h5>
-                                <p class="about-feature-text">{!! $data_about_us['our_mission'] ?? '' !!}</p>
+                                <p class="about-feature-text text-justify">{!! $data_about_us['our_mission'] ?? '' !!}</p>
                             </div>
                         </div>
                     </div>                    
@@ -109,7 +109,7 @@ Breadcumb
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $faqs['faq_1']['answer'] ?? '' }}
                                     </p>
                                 </div>
@@ -138,7 +138,7 @@ Breadcumb
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $faqs['faq_2']['answer'] ?? '' }}
                                     </p>
                                 </div>
@@ -167,7 +167,7 @@ Breadcumb
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $faqs['faq_3']['answer'] ?? '' }}
                                     </p>
                                 </div>
@@ -196,7 +196,7 @@ Breadcumb
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $faqs['faq_4']['answer'] ?? '' }}
                                     </p>
                                 </div>
@@ -225,7 +225,7 @@ Breadcumb
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $faqs['faq_5']['answer'] ?? '' }}
                                     </p>
                                 </div>
@@ -254,7 +254,7 @@ Breadcumb
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $faqs['faq_6']['answer'] ?? '' }}
                                     </p>
                                 </div>
@@ -283,7 +283,7 @@ Breadcumb
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $faqs['faq_7']['answer'] ?? '' }}
                                     </p>
                                 </div>

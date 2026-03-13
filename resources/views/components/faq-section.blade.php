@@ -68,7 +68,7 @@
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $data['faq_1']['answer'] ?? '' }}
                                     </p>
                                 </div>
@@ -97,7 +97,7 @@
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $data['faq_2']['answer'] ?? '' }}
                                     </p>
                                 </div>
@@ -126,7 +126,7 @@
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $data['faq_3']['answer'] ?? '' }}
                                     </p>
                                 </div>
@@ -155,7 +155,7 @@
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $data['faq_4']['answer'] ?? '' }}
                                     </p>
                                 </div>
@@ -184,7 +184,7 @@
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $data['faq_5']['answer'] ?? '' }}
                                     </p>
                                 </div>
@@ -213,7 +213,7 @@
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $data['faq_6']['answer'] ?? '' }}
                                     </p>
                                 </div>
@@ -242,7 +242,7 @@
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $data['faq_7']['answer'] ?? '' }}
                                     </p>
                                 </div>
@@ -271,7 +271,7 @@
                                  aria-labelledby="{{ $headerId }}"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">
+                                    <p class="faq-text text-justify">
                                         {{ $data['faq_8']['answer'] ?? '' }}
                                     </p>
                                 </div>

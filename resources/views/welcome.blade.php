@@ -8,7 +8,8 @@
     <!--==============================
     Hero Area
     ==============================-->
-    <div class="hero-wrapper hero-4" id="hero" style="background-image: url({{  (new App\Helpers\GeneralHelper())->fetchImageUrl($hero_data['background_image']) ?? asset('assets/img/hero/banner1.png') }});">
+    <div class="hero-wrapper hero-4" id="hero"
+        style="background-image: url({{ (new App\Helpers\GeneralHelper())->fetchImageUrl($hero_data['background_image'] ?? null) ?? asset('assets/img/hero/banner1.png') }});">
         <div class="hero-shape4-1">
             <img class="shape-position shape1" src="{{asset('assets/img/hero/shape1.png')}}" alt="img">
             <img class="shape-position shape2" src="{{asset('assets/img/hero/shape2.png')}}" alt="img">
@@ -20,7 +21,7 @@
                     <div class="hero-style4">
                         <span class="sub-title text-white">{{ $hero_data['subtitle'] ?? '' }}</span>
                         <h1 class="hero-title text-white">{{ $hero_data['hero_title'] ?? '' }} </h1>
-                        <p class="hero-text text-white">{{ $hero_data['hero_text'] ?? '' }} </p>
+                        <p class="hero-text text-white text-justify">{{ $hero_data['hero_text'] ?? '' }} </p>
                     </div>
                 </div>
             </div>                
@@ -70,7 +71,9 @@
     <div class="container">
         <div class="footer-top-1 bg-theme" style="background-image: url({{asset('assets/img/bg/footer-top-bg1-1.png')}});">
             <div class="footer-logo">
-                <a href="index.html"><img src="{{(new App\Helpers\GeneralHelper())->fetchImageUrl($company_info['company_logo']) ?? asset('assets/img/logo-white.svg') }}" alt="Fixturbo"></a>
+                <a href="index.html">
+                    <img src="{{ (new App\Helpers\GeneralHelper())->fetchImageUrl($company_info['company_logo'] ?? null) ?? asset('assets/img/logo-white.svg') }}" alt="Fixturbo">
+                </a>
             </div>
             <div class="call-media-wrap">
                 <div class="icon">
