@@ -194,7 +194,7 @@
     </div>
 
     <div class="container">
-        <div class="footer-top-1 bg-theme" style="background-image: url({{ asset('assets/img/bg/footer-top-bg1-1.png') }});">
+        <div class="footer-top-1 bg-dark" style="background-image: url({{ asset('assets/img/bg/footer-top-bg1-1.png') }});">
             <div class="call-media-wrap">
                 <div class="media-body">
                     <h4 class="link">

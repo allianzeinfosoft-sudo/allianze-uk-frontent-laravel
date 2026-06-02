@@ -134,7 +134,7 @@
     </section>    
 
     <div class="container">
-        <div class="footer-top-1 bg-theme" style="background-image: url({{asset('assets/img/bg/footer-top-bg1-1.png')}});">
+        <div class="footer-top-1 bg-dark" style="background-image: url({{asset('assets/img/bg/footer-top-bg1-1.png')}});">
             <div class="footer-logo">
                 <a href="index.html"><img src="{{(new App\Helpers\GeneralHelper())->fetchImageUrl($company_info['company_logo']) ?? asset('assets/img/logo-white.svg') }}" alt="Fixturbo"></a>
             </div>

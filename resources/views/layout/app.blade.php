@@ -44,6 +44,15 @@
         .header-layout1 .menu-area .logo-bg {
             background-color: #000000;
         }
+
+        @media (max-width: 1199px) {
+            .header-layout1 .header-logo {
+                background-color: #000000;
+            }
+            .header-layout1 .header-logo:after {
+                background-color: #000000;
+            }
+    }
         .header-layout1 .header-navbar-logo {
             padding: 2px 0;
         }
