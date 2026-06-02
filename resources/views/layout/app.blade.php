@@ -41,6 +41,13 @@
         .text-justify {
           text-align: justify !important;
         }
+        .header-layout1 .menu-area .logo-bg {
+            background-color: #000000;
+        }
+        .header-layout1 .header-navbar-logo {
+            padding: 2px 0;
+        }
+
     </style>
     @yield('css')
     @stack('css')
