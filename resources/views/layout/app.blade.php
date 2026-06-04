@@ -7,24 +7,18 @@
     <meta name="description" content="@yield('meta_description', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ')">
     <meta name="keywords" content="@yield('meta_keyword', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ')">
     <meta name="robots" content="INDEX,FOLLOW">
-
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Favicons - Place favicon.ico in the root directory -->
     <link rel="icon" href="/favicon.ico">
-
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-
     <!--==============================
 	  Google Fonts
 	============================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
-
     <!--==============================
 	    All CSS File
 	============================== -->
@@ -57,7 +51,6 @@
         .header-layout1 .header-navbar-logo {
             padding: 2px 0;
         }
-
     </style>
     @yield('css')
     @stack('css')
