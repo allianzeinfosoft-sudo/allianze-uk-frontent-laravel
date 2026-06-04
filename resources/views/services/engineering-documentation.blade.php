@@ -202,7 +202,7 @@
                                 @include('layout.partials.sevice-link')                             
                             </ul>
                         </div> 
-                        <div class="widget widget_contact">
+                        {{-- <div class="widget widget_contact"> --}}
                             {{-- <div class="widget-contact-wrap text-center">
                                 <h3 class="widget_title">Contact Us</h3>
                                 <p class="widget-contact-text">It is a long established fact that a reader will be distracted by the and readable content repair</p>
@@ -212,7 +212,7 @@
                                 <p class="widget-contact-text">Need help?</p>
                                 <h5><a href="tel:80855510111">{{ $company_info['phone'] }}</a></h5>
                             </div> --}}
-                        </div> 
+                        {{-- </div>  --}}
                     </aside>
                 </div>
             </div>
