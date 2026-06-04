@@ -49,7 +49,7 @@
             }
     }
         .header-layout1 .header-navbar-logo {
-            padding: 2px 0;
+            padding: 23px 0;
         }
     </style>
     @yield('css')
