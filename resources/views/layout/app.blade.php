@@ -48,6 +48,9 @@
                 background-color: transparent !important;
             }
     }
+       .header-layout1 .sticky-wrapper.sticky .header-navbar-logo {
+            margin-top: 0px;
+        }
         .header-layout1 .header-navbar-logo {
             padding: 23px 0;
         }
