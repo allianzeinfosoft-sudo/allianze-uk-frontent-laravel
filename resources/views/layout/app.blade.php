@@ -37,15 +37,15 @@
           text-align: justify !important;
         }
         .header-layout1 .menu-area .logo-bg {
-            background-color: #000000;
+            background-color:transparent !important;
         }
 
         @media (max-width: 1199px) {
             .header-layout1 .header-logo {
-                background-color: #000000;
+                background-color: transparent !important;
             }
             .header-layout1 .header-logo:after {
-                background-color: #000000;
+                background-color: transparent !important;
             }
     }
         .header-layout1 .header-navbar-logo {
