@@ -198,7 +198,7 @@
             <div class="call-media-wrap">
                 <div class="media-body">
                     <h4 class="link">
-                        <a class="text-white" href="javascript:void(0)">{{ $data_service['subtitle_4'] ?? 'Default Description 3' }}</a>
+                        <a class="text-white" href="/contact-us">{{ $data_service['subtitle_4'] ?? 'Default Description 3' }}</a>
                     </h4>
                 </div>
             </div>
