@@ -18,16 +18,16 @@
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
                                     @if(isset($footerData['col_1']['link_1_title']))
-                                        <li><a href="{{$footerData['col_1']['link_1_url'] ?? '#'}}">{{$footerData['col_1']['link_1_title'] ?? 'Link 1'}}</a></li>
+                                        <li><a href="/">{{$footerData['col_1']['link_1_title'] ?? 'Link 1'}}</a></li>
                                     @endif
                                     @if(isset($footerData['col_1']['link_2_title']))
-                                        <li><a href="{{$footerData['col_1']['link_2_url'] ?? '#'}}">{{$footerData['col_1']['link_2_title'] ?? 'Link 2'}}</a></li>
+                                        <li><a href="/about-us">{{$footerData['col_1']['link_2_title'] ?? 'Link 2'}}</a></li>
                                     @endif
                                     @if(isset($footerData['col_1']['link_3_title']))
-                                        <li><a href="{{$footerData['col_1']['link_3_url'] ?? '#'}}">{{$footerData['col_1']['link_3_title'] ?? 'Link 3'}}</a></li>
+                                        <li><a href="/blogs">{{$footerData['col_1']['link_3_title'] ?? 'Link 3'}}</a></li>
                                     @endif
                                     @if(isset($footerData['col_1']['link_4_title']))
-                                        <li><a href="{{$footerData['col_1']['link_4_url'] ?? '#'}}">{{$footerData['col_1']['link_4_title'] ?? 'Link 4'}}</a></li>
+                                        <li><a href="/contact-us">{{$footerData['col_1']['link_4_title'] ?? 'Link 4'}}</a></li>
                                     @endif
                                 </ul>
                             </div>
@@ -39,16 +39,16 @@
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
                                     @if(isset($footerData['col_2']['link_1_title']))
-                                        <li><a href="{{$footerData['col_2']['link_1_url'] ?? '#'}}">{{$footerData['col_2']['link_1_title'] ?? 'Link 1'}}</a></li>
+                                        <li><a href="/services/data-entry-services">{{$footerData['col_2']['link_1_title'] ?? 'Link 1'}}</a></li>
                                     @endif
                                     @if(isset($footerData['col_2']['link_2_title']))
-                                        <li><a href="{{$footerData['col_2']['link_2_url'] ?? '#'}}">{{$footerData['col_2']['link_2_title'] ?? 'Link 2'}}</a></li>
+                                        <li><a href="/services/virtual-assistant-service">{{$footerData['col_2']['link_2_title'] ?? 'Link 2'}}</a></li>
                                     @endif
                                     @if(isset($footerData['col_2']['link_3_title']))
-                                        <li><a href="{{$footerData['col_2']['link_3_url'] ?? '#'}}">{{$footerData['col_2']['link_3_title'] ?? 'Link 3'}}</a></li>
+                                        <li><a href="/services/engineering-design-service">{{$footerData['col_2']['link_3_title'] ?? 'Link 3'}}</a></li>
                                     @endif
                                     @if(isset($footerData['col_2']['link_4_title']))
-                                        <li><a href="{{$footerData['col_2']['link_4_url'] ?? '#'}}">{{$footerData['col_2']['link_4_title'] ?? 'Link 4'}}</a></li>
+                                        <li><a href="/services/image-retouching-service">{{$footerData['col_2']['link_4_title'] ?? 'Link 4'}}</a></li>
                                     @endif
                                     @if(isset($footerData['col_2']['link_5_title']))
                                         <li><a href="{{$footerData['col_2']['link_5_url'] ?? '#'}}">{{$footerData['col_2']['link_5_title'] ?? 'Link 5'}}</a></li>
