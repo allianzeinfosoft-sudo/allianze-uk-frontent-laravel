@@ -71,7 +71,7 @@
                                     <img src="{{asset('assets/img/icon/chat.svg') }}" alt="img">
                                     <div class="navbar-right-desc-details">
                                         <h6 class="title">Need help?</h6>
-                                        <a class="link" href="tel:{{ $company_info['general_settings']['mobile'] ?? '' }}">{{ $company_info['general_settings']['mobile'] ?? '' }}</a>
+                                        <a class="link" href="tel:{{ $company_info['general_settings']['mobile'] ?? '' }}">{{ '+'.$company_info['general_settings']['mobile'] ?? '' }}</a>
                                     </div>
                                 </div>
                                 <a href="{{route('contact-us')}}" class="btn style-border3">Get A Quote <i class="fas fa-arrow-right ms-2"></i></a>

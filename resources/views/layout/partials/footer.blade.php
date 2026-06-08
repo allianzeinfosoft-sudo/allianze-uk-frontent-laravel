@@ -66,7 +66,7 @@
                         <div class="widget footer-widget">
                             <h3 class="widget_title">Contact</h3>
                             <div class="widget-contact">
-                                <p><a href="tel:{{ $company['phone'] ?? '' }}">{{ $company['phone'] ?? '' }}</a></p>
+                                <p><a href="tel:{{ $company['phone'] ?? '' }}">+{{ $company['phone'] ?? '' }}</a></p>
                                 <p><a href="mailto:{{ $company['e-mail'] ?? '' }}">{{ $company['e-mail']?? '' }}</a></p>
                                 <p>{{ $company['address'] ?? '' }}</p>
                             </div>
